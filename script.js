@@ -48,7 +48,7 @@ async function fetchBreedImages(selectedBreedId) {
     clearCarousel();
     clearInfoDump();
 
-    const response = await fetch(`https://api.thecatapi.com/v1/images/search?breed_id=${selectedBreedId}&limit=5`);
+    const response = await fetch(`https://api.thecatapi.com/v1/images/search?breed_id=${selectedBreedId}&limit=1`);
     const imageDataArray = await response.json();
 
     progressBar.style.display = "none";
@@ -115,3 +115,5 @@ breedSelect.addEventListener("change", async () => {
   const selectedBreedId = breedSelect.value;
   await fetchBreedImages(selectedBreedId);
 });
+
+
