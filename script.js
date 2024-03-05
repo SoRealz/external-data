@@ -90,7 +90,7 @@ function getSelectedBreedName() {
 }
 
 function updateInfoDump(selectedBreedId) {
-  // Add your logic here to update the infoDump based on the selectedBreedId
+  // Add logic here to update the infoDump based on the selectedBreedId
   console.log("Updating infoDump for breed:", selectedBreedId);
 }
 
